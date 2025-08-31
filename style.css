@@ -1,0 +1,54 @@
+.calcbody {
+    background-color: rgb(122, 122, 122);
+    height: 600px;
+    margin: 50px 20px;
+    border-radius: 20px;
+    border: black solid 1px;
+}
+.output {
+    background-color: rgb(235, 236, 236);
+    margin: 100px;
+    border-radius: 10px;
+    height: 50px;
+    border: 1px black solid;
+    text-align: center;
+}
+.main {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.operations {
+    height: 250px;
+    width: 67px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.numbers {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    width: 200px;
+    height: 250px;
+    gap: 5px;
+}
+.row1, .row2, .row3, .row4 {
+    display: flex;
+    flex-grow: 1;
+    gap: 5px;
+}
+#solve {
+    flex-grow: 3;
+}
+button {
+    flex-grow: 1;
+    border-radius: 5px;
+}
+button:hover {
+    filter: brightness(.8);
+}
+h2 {
+    text-align: center;
+    
+}
