@@ -46,7 +46,7 @@ function operate() {
             }
             else
             {
-                answer = divide(first, second);
+                answer = Math.round(divide(first, second) * 100) / 100;
             }
         
         }
@@ -65,7 +65,14 @@ function operate() {
 }
 function changeOperator(op) {
     console.log("operation ran")
-    if (!firstNumberSelected && output.innerHTML != "")
+    if (firstNumberSelected && output.innerHTML != "")
+    {
+        operator = op;
+        operate();
+        firstNumberSelected = true;
+        first = lastAnswer;
+    }
+    else if (!firstNumberSelected && output.innerHTML != "")
     {
         operator = op;
         console.log("operation chosen is " + operator);
