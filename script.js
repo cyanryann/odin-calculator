@@ -55,7 +55,6 @@ function operate() {
             output.innerHTML = "uhhh what the heck";
         }
         lastAnswer = answer;
-        
         output.innerHTML = first + " " + operator + " " + second + " = " + answer;
         firstNumberSelected = false;
         first = 0;
@@ -92,6 +91,9 @@ numbers.forEach((button) => {
     {
         button.addEventListener("click", () =>{
             output.innerHTML = "";
+            first = 0;
+            second = 0; 
+            firstNumberSelected = false;
         })
         
     }
